@@ -1,0 +1,30 @@
+## Application implementing RecyclerView as a modern
+alternative to ListView
+#### activity_main.xml
+
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>
+```
+
+#### Create a new layout file res/layout/item_layout.xml
+```py
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="16dp">
+<TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="18sp" />
+</LinearLayout>
+
+```
