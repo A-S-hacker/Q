@@ -64,7 +64,8 @@ protected void onCreate(Bundle savedInstanceState) {
     .setPriority(NotificationCompat.PRIORITY_DEFAULT);
     if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
       return;
+    }
+
+    NotificationManagerCompat.from(this).notify(1, builder.build());
   }
-  NotificationManagerCompat.from(this).notify(1, builder.build());
-}
 }
