@@ -1,0 +1,30 @@
+using System;
+
+class Armstrong
+{
+    public static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        int original = num;
+        int sum = 0;
+
+        while(num > 0)
+        {
+            int digit = num % 10;
+            sum = sum + (digit * digit * digit);
+            num = num / 10;
+        }
+
+        if (original == sum)
+        {
+            Console.WriteLine("The number is Armstrong");
+        }
+        else
+        {
+
+            Console.WriteLine("The number is not Armstrong");
+        }
+    }
+}
