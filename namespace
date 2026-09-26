@@ -1,0 +1,22 @@
+using System;
+
+namespace MyNamespace
+{
+    class Student
+    {
+        public void Display()
+        {
+            Console.WriteLine("This is namespace.");
+        }
+    }
+}
+
+class program
+{
+    public static void Main()
+    {
+        MyNamespace.Student s = new MyNamespace.Student();
+
+        s.Display();
+    }
+}
