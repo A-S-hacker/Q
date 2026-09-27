@@ -1,0 +1,21 @@
+// before running right click to timer open properties section of the timer and in behaviour section set enabled:true and interval:300 after that run the program
+
+
+int i = 0;
+private void timer1_Tick(object sender, EventArgs e)
+{
+    if (i == 0)
+    {
+        label1.Text = "Click Here and win 1cr";
+        label1.BackColor = Color.Red;
+        label1.ForeColor = Color.Black;
+        i = 1;
+    }
+    else
+    {
+        label1.Text = "signup and collect your money";
+        label1.BackColor = Color.Green;
+        label1.ForeColor = Color.Blue;
+        i = 0;
+    }
+}
